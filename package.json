@@ -1,0 +1,21 @@
+{
+  "name": "axios-add-jsonp",
+  "version": "0.0.1",
+  "description": "Add a jsonp method to axios",
+  "main": "index.js",
+  "repository": "git@github.com:ccbabi/axios-add-jsonp.git",
+  "author": "ccbabi <kxxw28@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "axios",
+    "jsonp"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "axios": "^0.17.1",
+    "jsonp": "^0.2.1",
+    "qs": "^6.5.1"
+  }
+}
