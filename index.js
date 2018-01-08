@@ -14,10 +14,10 @@ var instanceDefaults = {
 }
 
 var jsonpDefaults = {
-  timeout
+  timeout: timeout
 }
 
-function create (defaults = {}) {
+function create (defaults) {
   var instance = axios.create(objectAssign({}, instanceDefaults, defaults));
 
   ['get', 'delete', 'head', 'options'].forEach(function (method) {
@@ -73,10 +73,10 @@ function isFunction (func) {
   return typeof func === 'function'
 }
 
-// 废除单例：runRequesHook、runResponseHook
-// 外部可动态替换hook值
+// Every time it is detected, it means that the external dynamic changes
 function runHook (instance, type) {
-  var hook = `${type ? 'response' : 'request'}Hook`
+  var hook = type ? 'response' : 'request'
+  hook += 'Hook'
   if (instance[hook] && isFunction(instance[hook])) {
     instance[hook]()
   }
