@@ -15,7 +15,9 @@
   ],
   "dependencies": {
     "axios": "^0.17.1",
+    "es6-promise": "^4.2.2",
     "jsonp": "^0.2.1",
+    "object-assign": "^4.1.1",
     "qs": "^6.5.1"
   }
 }
