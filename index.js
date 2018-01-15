@@ -85,6 +85,6 @@ function runHook (instance, type) {
 module.exports = {
   request: create(),
   create: create,
-  nativeAxios: axios,
-  nativeJsonp: jsonp
+  axios: axios,
+  jsonp: jsonp
 }
