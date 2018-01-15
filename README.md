@@ -11,15 +11,15 @@ Unifies all requests
 ```javascript
 import request from 'axios-add-jsonp'
 
-request.jsonp('api/123', { bar: foo, foo: bar }).then(res => {
+request.jsonp('/api/123', { bar: foo, foo: bar }).then(res => {
   // do some thing
 })
 
-request.get('api/123', { bar: foo, foo: bar }).then(res => {
+request.get('/api/123', { bar: foo, foo: bar }).then(res => {
   // do some thing
 })
 
-request.post('api/123', { bar: foo, foo: bar }).then(res => {
+request.post('/api/123', { bar: foo, foo: bar }).then(res => {
   // do some thing
 })
 
@@ -35,7 +35,7 @@ const request = create({
   }
 })
 
-request.post('api/123', { bar: foo, foo: bar }).then(res => {
+request.post('/api/123', { bar: foo, foo: bar }).then(res => {
   // do some thing
 })
 
