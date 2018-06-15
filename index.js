@@ -2,7 +2,6 @@ var axios = require('axios')
 var jsonp = require('jsonp')
 var qs = require('qs')
 var objectAssign = require('object-assign')
-var Promise = require('es6-promise').Promise
 
 var timeout = 60000
 var instanceDefaults = {

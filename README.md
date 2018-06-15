@@ -50,5 +50,8 @@ Format is as follows:
 
 Note: all methods are in this format, including GET, DELETE, HEAD, OPTIONS.
 
+## Promises
+axios-add-jsonp depends on a native ES6 Promise implementation to be supported. If your environment doesn't support ES6 Promises, you can [polyfill](https://github.com/stefanpenner/es6-promise).
+
 ## License
 MIT
